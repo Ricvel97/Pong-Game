@@ -41,7 +41,7 @@ while game_is_on:
         pong.x_bounce()
         time_to_sleep *= 0.9
 
-    # Detect collision with edge
+    # Detect collision with side edges
     if pong.xcor() > 390:
         pong.reset()
         scoreboard.left_score()
