@@ -29,7 +29,7 @@ while game_is_on:
     time.sleep(time_to_sleep)
     pong.move()
 
-    # Detect collision with wall
+    # Detect collision with upper or lower wall to bounce in the Y axis
     if pong.ycor() > 280 or pong.ycor() < -280:
         pong.y_bounce()
 
@@ -41,7 +41,7 @@ while game_is_on:
         pong.x_bounce()
         time_to_sleep *= 0.9
 
-    # Detect collision with side edges
+    # Detect collision with side edges to reset the ball and set the speed to normal again
     if pong.xcor() > 390:
         pong.reset()
         scoreboard.left_score()

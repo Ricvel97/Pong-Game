@@ -13,9 +13,9 @@ class Pong(Turtle):
         self.penup()
 
     def move(self):
-        x_cor = self.xcor() + self.x_distance
-        y_cor = self.ycor() + self.y_distance
-        self.goto(x_cor, y_cor)
+        new_x_cor = self.xcor() + self.x_distance
+        new_y_cor = self.ycor() + self.y_distance
+        self.goto(new_x_cor, new_y_cor)
 
     def y_bounce(self):
         self.y_distance *= -1

@@ -10,7 +10,6 @@ class Scoreboard(Turtle):
         self.l_score = 0
         self.update_scoreboard()
 
-
     def update_scoreboard(self):
         self.clear()
 
